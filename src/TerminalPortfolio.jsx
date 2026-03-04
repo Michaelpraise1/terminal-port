@@ -93,8 +93,8 @@ const COMMANDS = {
             <p className="text-blue-400 text-xs mt-2">Next.js • Firebase • Tailwind</p>
             <a href="https://cqrvault.org/" target='_blank' className="text-yellow-400 text-xs mt-1 inline-block hover:underline">Check it out</a>
           </div>
-          
-          
+
+
         </div>
       </div>
     ),
@@ -288,19 +288,19 @@ const TerminalPortfolio = () => {
         {/* Terminal Content Box */}
         <div className="terminal-content">
           {history.map((entry, index) => (
-            <div key={index} className="mb-2">
+            <div key={index} className="mb-2 break-all">
               {entry.type === 'input' && (
-                <div className="flex items-center text-green-400 font-mono">
+                <div className="flex flex-wrap items-center text-green-400 font-mono">
                   {entry.namePrompt ? (
                     <span className="mr-2 text-blue-400">Name:</span>
                   ) : (
                     <span className="mr-2 text-blue-400">{userName || 'guest'}@portfolio:~$</span>
                   )}
-                  <span className="text-white">{entry.content}</span>
+                  <span className="text-white break-all">{entry.content}</span>
                 </div>
               )}
               {entry.type !== 'input' && (
-                <div className="mt-1 font-mono text-sm leading-relaxed">
+                <div className="mt-1 font-mono text-sm leading-relaxed whitespace-pre-wrap break-words">
                   {entry.content}
                 </div>
               )}
@@ -308,8 +308,8 @@ const TerminalPortfolio = () => {
           ))}
 
           {/* Prompt line */}
-          <div className="flex items-center text-green-400 font-mono mt-2">
-            <span className="mr-2 text-blue-400 flex items-center whitespace-pre">
+          <div className="flex flex-wrap sm:flex-nowrap items-center text-green-400 font-mono mt-2 w-full">
+            <span className="mr-2 text-blue-400 flex items-center whitespace-nowrap">
               {step === 'ask_name' ? '> ' : `${userName || 'guest'}@portfolio:~$ `}
             </span>
             <input
@@ -318,7 +318,7 @@ const TerminalPortfolio = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              className="terminal-input flex-1 bg-transparent text-white outline-none font-mono"
+              className="terminal-input min-w-0 flex-1 bg-transparent text-white outline-none font-mono"
               autoFocus
               spellCheck="false"
               autoComplete="off"
