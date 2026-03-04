@@ -108,9 +108,11 @@ const COMMANDS = {
           <h3 className="text-lg font-bold">Contact Info</h3>
         </div>
         <div className="flex flex-col gap-2 text-gray-300">
-          <p>Email:   <a href="mailto:michaeloluwatoyin49@gmail.com" className="text-blue-400 hover:underline">michaeloluwatoyin49@gmail.com</a></p>
-          <p>GitHub:  <a href="https://github.com/michaelpraise1" className="text-blue-400 hover:underline">github.com/michaelpraise1</a></p>
-          <p>LinkedIn:<a href="https://www.linkedin.com/in/michael-oluwatoyin-412716379/" className="text-blue-400 hover:underline">https://www.linkedin.com/in/michael-oluwatoyin-412716379/</a></p>
+          <p>Whatsapp:   <a href="www.whatsapp.com/+2349018922313" target='_blank' className="text-blue-400 hover:underline">+234-9018922313</a></p>
+          <p>Telegram:   <a href="www.telegram.com/michaeldami" target='_blank' className="text-blue-400 hover:underline">michaeldami</a></p>
+          <p>Email:   <a href="mailto:michaeloluwatoyin49@gmail.com" target='_blank' className="text-blue-400 hover:underline">michaeloluwatoyin49@gmail.com</a></p>
+          <p>GitHub:  <a href="https://github.com/michaelpraise1" target='_blank' className="text-blue-400 hover:underline">github.com/michaelpraise1</a></p>
+          <p>LinkedIn:<a href="https://www.linkedin.com/in/michael-oluwatoyin-412716379/" target='_blank' className="text-blue-400 hover:underline">https://www.linkedin.com/in/michael-oluwatoyin-412716379/</a></p>
         </div>
       </div>
     ),
