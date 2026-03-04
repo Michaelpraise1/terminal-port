@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div className="flex  items-center justify-center w-full min-h-screen gap-8 px-4 lg:px-8 py-8">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen gap-8 px-4 lg:px-8 py-8">
 
       {/* 
         ID Card Section
